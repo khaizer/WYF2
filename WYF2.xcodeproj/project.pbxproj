@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3319BB471E330E0900B4C41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319BB461E330E0900B4C41D /* AppDelegate.swift */; };
-		3319BB491E330E0900B4C41D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319BB481E330E0900B4C41D /* ViewController.swift */; };
+		3319BB491E330E0900B4C41D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319BB481E330E0900B4C41D /* SignInVC.swift */; };
 		3319BB4C1E330E0900B4C41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3319BB4A1E330E0900B4C41D /* Main.storyboard */; };
 		3319BB4E1E330E0900B4C41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3319BB4D1E330E0900B4C41D /* Assets.xcassets */; };
 		3319BB511E330E0900B4C41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3319BB4F1E330E0900B4C41D /* LaunchScreen.storyboard */; };
+		3319BB591E330EAD00B4C41D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3319BB581E330EAD00B4C41D /* GoogleService-Info.plist */; };
+		4E68DAE64A24BB575F97EBC9 /* Pods_WYF2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2D8D5A51CF73793036A5C0 /* Pods_WYF2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3319BB431E330E0900B4C41D /* WYF2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYF2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3319BB461E330E0900B4C41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3319BB481E330E0900B4C41D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3319BB481E330E0900B4C41D /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		3319BB4B1E330E0900B4C41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3319BB4D1E330E0900B4C41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3319BB501E330E0900B4C41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3319BB521E330E0900B4C41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3319BB581E330EAD00B4C41D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		537832222375D87A705761F3 /* Pods-WYF2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYF2.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYF2/Pods-WYF2.release.xcconfig"; sourceTree = "<group>"; };
+		6A2D8D5A51CF73793036A5C0 /* Pods_WYF2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYF2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C630BC119C6E170E52948CD2 /* Pods-WYF2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYF2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYF2/Pods-WYF2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E68DAE64A24BB575F97EBC9 /* Pods_WYF2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				3319BB451E330E0900B4C41D /* WYF2 */,
 				3319BB441E330E0900B4C41D /* Products */,
+				E658B08777FBC788C2F9F196 /* Pods */,
+				BC6F0268A384BCDC5E73EF31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		3319BB451E330E0900B4C41D /* WYF2 */ = {
 			isa = PBXGroup;
 			children = (
+				3319BB5C1E330FFE00B4C41D /* Controller */,
+				3319BB5B1E330FF700B4C41D /* Model */,
+				3319BB5A1E330FF000B4C41D /* View */,
 				3319BB461E330E0900B4C41D /* AppDelegate.swift */,
-				3319BB481E330E0900B4C41D /* ViewController.swift */,
 				3319BB4A1E330E0900B4C41D /* Main.storyboard */,
 				3319BB4D1E330E0900B4C41D /* Assets.xcassets */,
 				3319BB4F1E330E0900B4C41D /* LaunchScreen.storyboard */,
+				3319BB581E330EAD00B4C41D /* GoogleService-Info.plist */,
 				3319BB521E330E0900B4C41D /* Info.plist */,
 			);
 			path = WYF2;
+			sourceTree = "<group>";
+		};
+		3319BB5A1E330FF000B4C41D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3319BB5B1E330FF700B4C41D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3319BB5C1E330FFE00B4C41D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3319BB481E330E0900B4C41D /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BC6F0268A384BCDC5E73EF31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A2D8D5A51CF73793036A5C0 /* Pods_WYF2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E658B08777FBC788C2F9F196 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C630BC119C6E170E52948CD2 /* Pods-WYF2.debug.xcconfig */,
+				537832222375D87A705761F3 /* Pods-WYF2.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3319BB551E330E0900B4C41D /* Build configuration list for PBXNativeTarget "WYF2" */;
 			buildPhases = (
+				C842834722CEC1A275123691 /* [CP] Check Pods Manifest.lock */,
 				3319BB3F1E330E0900B4C41D /* Sources */,
 				3319BB401E330E0900B4C41D /* Frameworks */,
 				3319BB411E330E0900B4C41D /* Resources */,
+				B587AE23B64359845F04EFB3 /* [CP] Embed Pods Frameworks */,
+				DC760ADA131BC4E8E2657BF3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3319BB511E330E0900B4C41D /* LaunchScreen.storyboard in Resources */,
+				3319BB591E330EAD00B4C41D /* GoogleService-Info.plist in Resources */,
 				3319BB4E1E330E0900B4C41D /* Assets.xcassets in Resources */,
 				3319BB4C1E330E0900B4C41D /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B587AE23B64359845F04EFB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYF2/Pods-WYF2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C842834722CEC1A275123691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC760ADA131BC4E8E2657BF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYF2/Pods-WYF2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3319BB3F1E330E0900B4C41D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3319BB491E330E0900B4C41D /* ViewController.swift in Sources */,
+				3319BB491E330E0900B4C41D /* SignInVC.swift in Sources */,
 				3319BB471E330E0900B4C41D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,11 +362,15 @@
 		};
 		3319BB561E330E0900B4C41D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C630BC119C6E170E52948CD2 /* Pods-WYF2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9YAW3RZ5V6;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = WYF2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KKS.WYF2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -272,11 +379,15 @@
 		};
 		3319BB571E330E0900B4C41D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537832222375D87A705761F3 /* Pods-WYF2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9YAW3RZ5V6;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = WYF2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.KKS.WYF2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -302,6 +413,7 @@
 				3319BB571E330E0900B4C41D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
